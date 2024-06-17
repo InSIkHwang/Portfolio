@@ -43,6 +43,7 @@ const CardInfo = styled(motion.div)`
 
   ${Media.small`  
     margin: 10px auto 20px auto;
+    width: 90%;
   `};
 `;
 
@@ -124,7 +125,7 @@ const EducationInfo = styled(motion.div)`
     width: 50%;
   }
   &.name {
-    padding-right: 5px;
+    padding-right: 3px;
     border: none;
   }
   `};
