@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/InSIkHwang/Portfolio/static/css/main.f855e6bc.css",
+    "main.js": "/InSIkHwang/Portfolio/static/js/main.76b66b9d.js",
+    "static/media/camp.pdf": "/InSIkHwang/Portfolio/static/media/camp.6964fcec865d1b6e5696.pdf",
+    "static/media/main.png": "/InSIkHwang/Portfolio/static/media/main.995e09c8494f66ffa4d2.png",
+    "static/media/award2.jpg": "/InSIkHwang/Portfolio/static/media/award2.f835f5813f3ce351573c.jpg",
+    "static/media/award1.jpg": "/InSIkHwang/Portfolio/static/media/award1.8575d90b54e6ca7eb894.jpg",
+    "static/media/search.png": "/InSIkHwang/Portfolio/static/media/search.c8e23f71d2a48fca7f24.png",
+    "static/media/certificates2.jpg": "/InSIkHwang/Portfolio/static/media/certificates2.760243d65d7dbd76ad3e.jpg",
+    "static/media/certificates1.jpg": "/InSIkHwang/Portfolio/static/media/certificates1.ffc902c32a5a0fe3ce02.jpg",
+    "static/media/info.png": "/InSIkHwang/Portfolio/static/media/info.1f2e5efd13cca04830c9.png",
+    "static/media/result.jpg": "/InSIkHwang/Portfolio/static/media/result.f8714a44a9ebc0ba11ba.jpg",
+    "static/media/rank.png": "/InSIkHwang/Portfolio/static/media/rank.1ba28d4c4f973157b1fb.png",
+    "static/media/startup.pdf": "/InSIkHwang/Portfolio/static/media/startup.b541b792757a249bdfd9.pdf",
+    "static/media/defense.pdf": "/InSIkHwang/Portfolio/static/media/defense.2cfb506f981c8291f8d8.pdf",
+    "static/media/mypage.png": "/InSIkHwang/Portfolio/static/media/mypage.9fe8cc4b21f933bacc89.png",
+    "static/media/ticketing.png": "/InSIkHwang/Portfolio/static/media/ticketing.9348fb8159bb7e27cdcc.png",
+    "static/media/award3.png": "/InSIkHwang/Portfolio/static/media/award3.56f9990b8cf4586f1714.png",
+    "static/media/managepage.png": "/InSIkHwang/Portfolio/static/media/managepage.0ee5fe081c04a4af9a0a.png",
+    "static/media/IDphoto.jpg": "/InSIkHwang/Portfolio/static/media/IDphoto.3ea173d318d4ab5d6bc2.jpg",
+    "static/media/logo.png": "/InSIkHwang/Portfolio/static/media/logo.da04f354eafbc64ecc1e.png",
+    "static/media/remove.png": "/InSIkHwang/Portfolio/static/media/remove.1d1f66d5085849562143.png",
+    "static/media/styled-components.png": "/InSIkHwang/Portfolio/static/media/styled-components.187ede027f1bf80de7c3.png",
+    "static/media/drag.png": "/InSIkHwang/Portfolio/static/media/drag.41681a7176d2e34bf426.png",
+    "static/media/react.png": "/InSIkHwang/Portfolio/static/media/react.2fd889bdda3c25b36c37.png",
+    "static/media/postman.png": "/InSIkHwang/Portfolio/static/media/postman.a12994d24baf5bf6028c.png",
+    "static/media/vscode.png": "/InSIkHwang/Portfolio/static/media/vscode.f0815118dec77fc63de3.png",
+    "index.html": "/InSIkHwang/Portfolio/index.html",
+    "main.f855e6bc.css.map": "/InSIkHwang/Portfolio/static/css/main.f855e6bc.css.map",
+    "main.76b66b9d.js.map": "/InSIkHwang/Portfolio/static/js/main.76b66b9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.76b66b9d.js"
+  ]
+}
