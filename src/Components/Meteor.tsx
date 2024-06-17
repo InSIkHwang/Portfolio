@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import Media from "./Media";
 
 interface MeteorEffectProps {
   count?: number;

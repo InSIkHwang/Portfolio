@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 import logoImg from "../Assets/img/logo.png";
+import Media from "./Media";
 
 const Nav = styled(motion.div)`
   position: fixed;
@@ -16,6 +17,12 @@ const Nav = styled(motion.div)`
   font-weight: 500;
   z-index: 99;
   background-color: #1b1b1ec1;
+
+  ${Media.small`
+    position: fixed;
+    width:  100vw;  
+    top: 0;  
+  `};
 `;
 
 const Logo = styled.div`
@@ -28,6 +35,10 @@ const Logo = styled.div`
   width: 80px;
   margin-left: 20px;
   cursor: pointer;
+
+  ${Media.small`
+    height: 8vh;
+  `};
 `;
 
 const Items = styled.ul`
@@ -52,6 +63,10 @@ const Item = styled.li<ItemProps>`
   &:hover {
     color: #fff;
   }
+
+  ${Media.small`
+    font-size: 10px;
+  `};
 `;
 
 const Header = () => {

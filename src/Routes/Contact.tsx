@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import styled from "styled-components";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import Toast from "../Components/Toast";
+import Media from "../Components/Media";
 
 const Container = styled(motion.div)`
   display: flex;
@@ -35,13 +36,21 @@ const ContactWrapper = styled(motion.div)`
   flex-direction: column;
   margin: 50px auto;
   border: 1px solid #fff;
-  padding: 50px 50px;
+  padding: 50px;
+
+  ${Media.small`
+    padding: 30px;
+  `};
 `;
 
 const ContactItem = styled(motion.div)`
   font-size: 18px;
   margin-bottom: 10px;
   cursor: pointer;
+
+  ${Media.small`
+    font-size: 14px;
+  `};
 `;
 
 const ContactIconWrapper = styled(motion.div)`
@@ -55,6 +64,11 @@ const StyledFaGithub = styled(FaGithub)`
   height: 50px;
   margin: 0 15px;
   cursor: pointer;
+
+  ${Media.small`
+    width: 30px;
+    height: 30px;
+  `};
 `;
 
 const StyledFaInstagram = styled(FaInstagram)`
@@ -62,6 +76,11 @@ const StyledFaInstagram = styled(FaInstagram)`
   height: 50px;
   margin: 0 15px;
   cursor: pointer;
+
+  ${Media.small`
+    width: 30px;
+    height: 30px;
+  `};
 `;
 
 const Underline = styled(motion.div)`

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styled from "styled-components";
 import MeteorEffect from "../Components/Meteor";
+import Media from "../Components/Media";
 
 interface TitleWrapperProps {
   borderVisible: boolean;
@@ -14,6 +15,14 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: 200px auto 0 auto;
+
+  ${Media.small`    
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  `};
 `;
 
 const TitleWrapper = styled(motion.div)<TitleWrapperProps>`
@@ -31,6 +40,13 @@ const TitleWrapper = styled(motion.div)<TitleWrapperProps>`
   position: relative;
   background-color: #1b1b1e99;
   z-index: 2;
+
+  ${Media.small`    
+    width:  200px;
+    height: 200px;
+    padding: 10px 10px;
+    top:7vh;
+  `};
 `;
 
 const MeteorWrapper = styled.div`
@@ -48,10 +64,17 @@ const BackgroundTitleWrapper = styled.div`
   width: 1000px;
   height: 600px;
   left: 50%;
-  top: 46%;
+  top: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: space-between;
+
+  ${Media.small`    
+    width:  300px;
+    height: 230px;
+    left: 50%;
+    top: 50%;
+  `};
 `;
 
 const BackgroundTitle = styled(motion.div)`
@@ -61,6 +84,10 @@ const BackgroundTitle = styled(motion.div)`
   letter-spacing: 20px;
   text-shadow: 3px 4px 5px #000000;
   z-index: 2;
+
+  ${Media.small`    
+    font-size: 25px;
+  `};
 `;
 
 const Title = styled(motion.div)`
@@ -69,6 +96,10 @@ const Title = styled(motion.div)`
   margin: 10px auto;
   width: 100%;
   position: relative;
+
+  ${Media.small`    
+    font-size: 20px;
+  `};
 `;
 
 const Arrow = styled(motion.div)`
@@ -80,6 +111,11 @@ const Arrow = styled(motion.div)`
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+  ${Media.small`    
+    position:relative;
+    top:0;
+    margin-top: 20px;
+  `};
 `;
 
 const arrowVariants = {

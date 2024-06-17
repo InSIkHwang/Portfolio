@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { motion, useInView } from "framer-motion";
 import WorkItems from "../Components/WorkItems";
+import Media from "../Components/Media";
 
 const Wrapper = styled(motion.div)`
   min-height: 100vh;
@@ -51,6 +52,10 @@ const Header = styled.div`
   font-size: 20px;
   font-weight: 700;
   width: 900px;
+
+  ${Media.small`
+    width: 90vw;
+  `};
 `;
 
 const HeaderItemUnderline = styled(motion.div)<{ selected: boolean }>`
@@ -74,6 +79,10 @@ const HeaderItem = styled.div<{ selected: boolean }>`
     transform: scaleX(1);
     transition: transform 0.3s;
   }
+
+  ${Media.small`
+    font-size: 10px;
+  `};
 `;
 
 const Body = styled.div`

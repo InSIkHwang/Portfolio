@@ -2,12 +2,17 @@ import { motion, useInView } from "framer-motion";
 import styled from "styled-components";
 import idPhoto from "../Assets/img/IDphoto.jpg";
 import { useRef } from "react";
+import Media from "./Media";
 
 const CardBox = styled(motion.div)`
   margin: 80px auto;
   width: 950px;
   border: 1px solid #f1f1f1;
   border-radius: 10px;
+
+  ${Media.small`    
+    width:90vw;
+  `};
 `;
 const CardImgWrapper = styled(motion.div)`
   margin-top: 40px;
@@ -25,11 +30,20 @@ const CardImgBox = styled(motion.div)`
   height: 200px;
   margin: auto 30px;
   border-radius: 10px;
+
+  ${Media.small`  
+    width: 56.25px;  
+    height: 75px;
+  `};
 `;
 
 const CardInfo = styled(motion.div)`
   width: 80%;
   margin: 50px auto;
+
+  ${Media.small`  
+    margin: 10px auto 20px auto;
+  `};
 `;
 
 const CardValues = styled(motion.div)`
@@ -47,7 +61,31 @@ const CardValues = styled(motion.div)`
     font-size: 28px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 2px #666666;
+    &:last-child {
+      margin-left: 250px;
+    }
   }
+
+  ${Media.small`  
+    width: 60%;
+
+    h1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 2px #666666;
+    &:last-child {
+      margin-left: 0px;
+    }    
+  }
+  `};
 `;
 const Education = styled(motion.div)`
   margin: 10px auto;
@@ -61,6 +99,10 @@ const EducationTitle = styled(motion.div)`
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+
+  ${Media.small`  
+    font-size: 10px;
+  `};
 `;
 const EducationInfo = styled(motion.div)`
   margin-top: 10px;
@@ -73,6 +115,19 @@ const EducationInfo = styled(motion.div)`
     padding-right: 10px;
     border: none;
   }
+
+  ${Media.small`  
+    margin-top: 3px;
+  padding: 0 3px;
+    font-size: 8px;
+    &.major {
+    width: 50%;
+  }
+  &.name {
+    padding-right: 5px;
+    border: none;
+  }
+  `};
 `;
 
 const cardItemVariants = {
@@ -111,7 +166,7 @@ const ProfileCard = () => {
             >
               ❝ 많이 질문하고, 많이 찾아보는
             </motion.h3>
-            <motion.h3 style={{ marginLeft: 250 }} variants={cardItemVariants}>
+            <motion.h3 variants={cardItemVariants}>
               개발자 황인식입니다! ❞
             </motion.h3>
           </CardValues>

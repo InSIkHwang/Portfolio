@@ -11,6 +11,7 @@ import reactIcon from "../Assets/img/skills/react.png";
 import styledComponentsIcon from "../Assets/img/skills/styled-components.png";
 import tsIcon from "../Assets/img/skills/typescript.png";
 import vscodeIcon from "../Assets/img/skills/vscode.png";
+import Media from "../Components/Media";
 
 const Container = styled.div`
   position: relative;
@@ -20,6 +21,11 @@ const Container = styled.div`
   margin-top: 200px;
   box-sizing: border-box;
   overflow: visible;
+
+  ${Media.small`
+    margin-top: 100px;
+    height: 70vh;
+  `};
 `;
 
 const Title = styled(motion.div)`
@@ -68,6 +74,10 @@ const Info = styled(motion.div)`
 
 const SkillWrapper = styled(motion.div)`
   margin: 80px auto;
+
+  ${Media.small`
+    width:90vw;
+  `};
 `;
 
 const Category = styled(motion.div)`
@@ -80,6 +90,11 @@ const Category = styled(motion.div)`
   border-style: none solid;
   border-radius: 5px;
   text-shadow: 2px 2px 2px #555;
+
+  ${Media.small`
+    font-size: 12px;
+    margin-bottom: 10px;
+  `};
 `;
 
 const ItemWrapper = styled(motion.div)`
@@ -88,6 +103,11 @@ const ItemWrapper = styled(motion.div)`
   align-items: center;
   min-height: 130px;
   padding: 0 30px;
+
+  ${Media.small`
+    padding: 0 8px;
+    min-height: 80px;
+  `};
 `;
 
 const ItemRows = styled(motion.ul)`
@@ -95,6 +115,10 @@ const ItemRows = styled(motion.ul)`
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+
+  ${Media.small`
+    gap: 5px;
+  `};
 `;
 
 const ItemBox = styled(motion.li)`
@@ -108,6 +132,11 @@ const ItemBox = styled(motion.li)`
   border-radius: 5px;
   border: 1px solid rgb(30, 30, 35);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+
+  ${Media.small`
+    width: 50px;
+  height: 50px;
+  `};
 `;
 
 const Icon = styled(motion.div)`
@@ -115,6 +144,11 @@ const Icon = styled(motion.div)`
   height: 50px;
   background-size: contain;
   background-repeat: no-repeat;
+
+  ${Media.small`
+    width: 25px;
+  height: 25px;
+  `};
 `;
 
 const InfoName = styled(motion.div)`

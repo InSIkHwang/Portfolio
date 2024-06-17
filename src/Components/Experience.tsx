@@ -2,10 +2,15 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import ExperienceDetail from "./ExperienceDetail";
 import { useState } from "react";
+import Media from "./Media";
 
 const Wrapper = styled.div`
   margin: 80px auto;
   width: 900px;
+
+  ${Media.small`
+    width: 90vw;
+  `};
 `;
 
 const Title = styled(motion.div)`
@@ -18,6 +23,11 @@ const ListWrapper = styled(motion.ul)`
   display: flex;
   gap: 20px;
   height: 240px;
+
+  ${Media.small`
+    gap: 8px;
+    height: 200px;
+  `};
 `;
 
 const List = styled(motion.li).attrs(() => ({
@@ -37,6 +47,10 @@ const ListTitle = styled(motion.div)`
   font-weight: 500;
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
+
+  ${Media.small`
+    font-size: 9px;
+  `};
 `;
 
 const ListDesc = styled(motion.div)`
@@ -45,6 +59,11 @@ const ListDesc = styled(motion.div)`
   font-weight: 300;
   text-align: left;
   line-height: 25px;
+
+  ${Media.small`
+    font-size: 8px;
+    line-height: 12px;
+  `};
 `;
 
 const MoreBtn = styled.div`
@@ -52,6 +71,10 @@ const MoreBtn = styled.div`
   right: 20px;
   bottom: 20px;
   cursor: pointer;
+
+  ${Media.small`
+    font-size: 8px;
+  `};
 `;
 
 const experienceData = [

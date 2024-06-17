@@ -10,6 +10,7 @@ import award3 from "../Assets/img/exp/camp/award3.png";
 import certificates1 from "../Assets/img/exp/camp/certificates1.jpg";
 import certificates2 from "../Assets/img/exp/camp/certificates2.jpg";
 import result from "../Assets/img/exp/startup/result.jpg";
+import Media from "./Media";
 
 const campPDF: string = require("../Assets/pdf/exp/camp.pdf");
 const defensePDF: string = require("../Assets/pdf/exp/defense.pdf");
@@ -27,18 +28,24 @@ const Modal = styled(motion.div)`
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow-y: scroll;
+
+  ${Media.small`
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+  `};
 `;
 
 const Overlay = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 `;
@@ -47,16 +54,28 @@ const Title = styled.div`
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 20px;
+
+  ${Media.small`
+    font-size: 12px;
+  `};
 `;
 
 const Info = styled.div`
   font-size: 16px;
   margin-bottom: 20px;
+
+  ${Media.small`
+    font-size: 10px;
+  `};
 `;
 
 const Desc = styled.div`
   font-size: 16px;
   line-height: 1.5;
+
+  ${Media.small`
+    font-size: 10px;
+  `};
 `;
 
 const Slider = styled.div`
@@ -74,12 +93,21 @@ const BigImg = styled.div<{ bg: string }>`
   height: 400px;
   margin: 10px 0;
   cursor: pointer;
+
+  ${Media.small`
+    width: 100%;
+  height: 150px;
+  `};
 `;
 
 const SmallImgContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 10px;
+
+  ${Media.small`
+    gap: 5px;
+  `};
 `;
 
 const SmallImg = styled.div<{ bg: string }>`
@@ -95,6 +123,11 @@ const SmallImg = styled.div<{ bg: string }>`
   &:hover {
     border: 2px solid #fff;
   }
+
+  ${Media.small`
+    width: 50px;
+    height: 30px;
+  `};
 `;
 
 const PDFBtn = styled.div`
@@ -103,6 +136,10 @@ const PDFBtn = styled.div`
   text-align: right;
   text-decoration: underline;
   font-weight: 500;
+
+  ${Media.small`
+    font-size: 10px;
+  `};
 `;
 
 const CloseButton = styled.button`
@@ -120,6 +157,11 @@ const ArrowBtn = styled(MdOpenInNew)`
   width: 24px;
   height: 24px;
   margin-left: 5px;
+
+  ${Media.small`
+    width: 14px;
+  height: 14px;
+  `};
 `;
 
 const LinkP = styled.p`
@@ -173,9 +215,10 @@ const ExperienceDetail = ({
         exit={{ opacity: 0 }}
       />
       <Modal
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        style={{ transform: "translate(-50%, -50%)" }}
       >
         <CloseButton onClick={onClose}>×</CloseButton>
         <Title>{title}</Title>

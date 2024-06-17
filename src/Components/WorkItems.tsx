@@ -20,6 +20,7 @@ import coinInfo from "../Assets/img/work/coin/info.png";
 import toDoMain from "../Assets/img/work/todo/main.png";
 import toDoDrag from "../Assets/img/work/todo/drag.png";
 import toDoRemove from "../Assets/img/work/todo/remove.png";
+import Media from "./Media";
 
 const campImgs = [campMain, campManage, campMypage, campTicketing];
 const sikFlixImgs = [sikMain, sikInfo, sikRank, sikSearch];
@@ -30,6 +31,10 @@ const Item = styled.div`
   width: 800px;
   display: flex;
   flex-direction: column;
+
+  ${Media.small`
+    width: 90vw;
+  `};
 `;
 
 const ImgWrapper = styled.div`
@@ -45,15 +50,27 @@ const InfoWrapper = styled.div`
   margin: 15px auto;
   font-size: 14px;
   width: 700px;
+
+  ${Media.small`
+    width: 90vw;
+  `};
 `;
 
 const InfoTitle = styled.div`
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 15px;
+
+  ${Media.small`
+    font-size: 18px;
+  `};
 `;
 const InfoDesc = styled.div`
   padding-bottom: 20px;
+
+  ${Media.small`
+    font-size: 12px;
+  `};
 `;
 const InfoListWrapper = styled.div``;
 const InfoList = styled.div`
@@ -66,9 +83,17 @@ const InfoListTitle = styled.div`
   margin-right: 5px;
   border-right: 1px solid #fff;
   font-weight: 500;
+
+  ${Media.small`
+    font-size: 12px;
+  `};
 `;
 const InfoListDesc = styled.div`
   width: 580px;
+
+  ${Media.small`
+    font-size: 12px;
+  `};
 `;
 
 const ImgMain = styled.div`
@@ -82,6 +107,13 @@ const ImgMain = styled.div`
   img {
     height: 350px;
   }
+
+  ${Media.small`
+    height: 160px;
+    img {
+    height: 160px;
+  }
+  `};
 `;
 const ImgList = styled.div`
   width: 100%;
@@ -95,6 +127,10 @@ const SmallImg = styled(motion.img)<{ isSelected: boolean }>`
   object-fit: contain;
   filter: ${(props) => (props.isSelected ? "brightness(30%)" : "none")};
   cursor: pointer;
+
+  ${Media.small`
+    width: 20%;
+  `};
 `;
 
 const InfoLinkWrapper = styled.div`
@@ -110,6 +146,12 @@ const InfoLink = styled(motion.div)`
   height: 40px;
   margin-right: 15px;
   background-color: #333;
+
+  ${Media.small`
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  `};
 `;
 const WindowIcon = styled(MdOpenInNew)`
   width: 30px;
