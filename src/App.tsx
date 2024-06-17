@@ -6,12 +6,12 @@ import Header from "./Components/Header";
 
 function App() {
   return (
-    <>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 
