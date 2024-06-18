@@ -1,7 +1,4 @@
-# INSIK'S FRONT-END PORTFOLIO
- 👉👉 [바로가기](https://insikhwang.github.io/Portfolio)
-
-ℹ 모바일 반응형 웹 구현 완료SIK'S FRONT-END PORTFOLIO
+ℹ 모바일 반응형 웹 구현 완료SIK'S FRONT-END PORTFOLIO ℹ
  👉👉 [바로가기](https://insikhwang.github.io/Portfolio)
 
 모바일 반응형 웹 구현 완료
