@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# INSIK'S FRONT-END PORTFOLIO
+ 👉👉 [바로가기](https://insikhwang.github.io/Portfolio)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ℹ 모바일 반응형 웹 구현 완료SIK'S FRONT-END PORTFOLIO
+ 👉👉 [바로가기](https://insikhwang.github.io/Portfolio)
 
-## Available Scripts
+모바일 반응형 웹 구현 완료
 
-In the project directory, you can run:
+- Intro
+  - framer-motion을 이용하여 인트로 페이지 구현
 
-### `npm start`
+- About
+  - 프로필 카드 구현
+  - EXPERIENCE 탭 구현 및 모달 창 구현
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Skills
+  - 아이콘 박스 구현
+  - framer-motion를 이용한 애니메이션 구현
+ 
+- Works
+  - 버튼식 메뉴 헤더 구현
+  - 이미지 리스트 구현
+ 
+- Contact
+  - 클릭 시 클립보드 복사 구현
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+### 🚀 개발환경
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 언어 : ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- 프론트 : ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- 배포 : ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+- 라이브러리 : ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📁 폴더 구조
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-📂[src]  
+ └── [Assets]  
+     └── [img] - 이미지 폴더    
+     └── [pdf] - PDF 폴더  
+ └── [Components] ― 리액트 컴포넌트 폴더  
+    └── Experience.tsx  
+    └── ExperienceDetail.tsx - Experience 상세 모달창    
+    └── Header.tsx
+    └── Media.tsx - 반응형 웹 브레이크 포인트 및 미디어 쿼리 정의  
+    └── Meteor.tsx - Intro 페이지 배경(별똥별)  
+    └── ProfileCard.tsx - 프로필 카드 컴포넌트  
+    └── Toast.tsx - 클립보드 복사 시 토스트 메세지  
+    └── WorkItems.tsx - Works 세부 정보  
+ └── [Routes]/_ ― 리액트 라우터 폴더  
+    └── Contact.tsx - 연락처 페이지  
+    └── Home.tsx  
+    └── Info.tsx - About 페이지  
+    └── Intro.tsx - Intro 페이지  
+    └── Skills.tsx - 스킬 페이지  
+    └── Works.tsx - Works 페이지  
+ └── App.tsx ― 컴포넌트 라우팅  
+ └── index.tsx  
