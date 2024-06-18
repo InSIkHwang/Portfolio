@@ -230,12 +230,12 @@ const ExperienceDetail = ({
         {id === 0 && (
           <>
             <PDFBtn>
-              <Link to={startUpPDF} target="_blank">
+              <a href={startUpPDF} target="_blank" rel="noopener noreferrer">
                 <LinkP>
                   사업계획서 PDF
                   <ArrowBtn />
                 </LinkP>
-              </Link>
+              </a>
             </PDFBtn>
             <Slider>
               <BigImg bg={result} onClick={() => handleImgClick(result!)} />
@@ -245,12 +245,12 @@ const ExperienceDetail = ({
         {id === 1 && (
           <>
             <PDFBtn>
-              <Link to={defensePDF} target="_blank">
+              <a href={defensePDF} target="_blank" rel="noopener noreferrer">
                 <LinkP>
                   사업계획서 PDF
                   <ArrowBtn />
                 </LinkP>
-              </Link>
+              </a>
             </PDFBtn>
             <Slider />
           </>
@@ -258,12 +258,12 @@ const ExperienceDetail = ({
         {id === 2 && (
           <>
             <PDFBtn>
-              <Link to={campPDF} target="_blank">
+              <a href={campPDF} target="_blank" rel="noopener noreferrer">
                 <LinkP>
                   최종 결과물(PDF)
                   <ArrowBtn />
                 </LinkP>
-              </Link>
+              </a>
             </PDFBtn>
             <Slider>
               <BigImg
