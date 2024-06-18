@@ -1,7 +1,7 @@
-INSIK'S FRONT-END PORTFOLIO
+# INSIK'S FRONT-END PORTFOLIO
  👉👉 [바로가기](https://insikhwang.github.io/Portfolio)
 
-ℹ 모바일 반응형 웹 구현 완료 ℹ  
+ℹ 모바일 반응형 웹 구현 완료 💡  
 
 - Intro
   - framer-motion을 이용하여 인트로 페이지 구현
